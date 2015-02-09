@@ -24,7 +24,6 @@
  - As property
 - Explain Backface
 - Christian Heilmann
-
 - [Carousel](http://desandro.github.io/3dtransforms/docs/carousel.html)
 - [Interactive CSS 3D Transform](http://codepen.io/agelber/pen/HkDvl)
 
