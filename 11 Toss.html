@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="assets/toggles.js"></script>
+	<link rel="stylesheet" href="assets/toggles.css">
+	<style>
+
+		div {
+			width: 500px;
+			height: 500px;
+			background: url('assets/bower-logo.png') no-repeat;
+			background-size: contain;
+
+			-webkit-animation-name: toss;	
+			-webkit-animation-duration: 5s;
+			-webkit-animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes toss {
+			0% { transform: rotate(-8deg); }
+			50% { transform: rotate(8deg); }
+			100% { transform: rotate(-8deg); }		
+		}
+
+/*		@-webkit-keyframes toss {
+			0% { transform: perspective(700px) rotateY(-60deg); }
+			50% { transform: perspective(700px) rotateY(60deg); }
+			100% { transform: perspective(700px) rotateY(-60deg); }		
+		}*/
+
+	</style>
+</head>
+<body>
+
+<div></div>
+	
+</body>
+</html>

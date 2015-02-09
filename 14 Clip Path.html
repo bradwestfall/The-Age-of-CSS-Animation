@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="assets/toggles.js"></script>
+	<link rel="stylesheet" href="assets/toggles.css">
+	<style>
+
+		div {
+			width: 500px;
+			height: 300px;
+			-webkit-animation: pulse 30s infinite alternate;
+			/*transition: all 1s;*/
+		}
+
+		div.clip {
+		}
+
+		@-webkit-keyframes pulse {
+		      0% {background-color: #45CEEF;}
+		     25% {background-color: #FFF5A5;}
+		     50% {background-color: #FFD4DA;}
+		     75% {background-color: #99D2E4;}
+		     100% {background-color: #D8CAB4;}
+		}
+
+		div.animate {
+		}
+
+	</style>
+</head>
+<body>
+
+<div></div>
+
+<nav>
+	<button class="clip">Clip</button>
+	<button class="animate">Animate</button>
+</nav>
+	
+</body>
+</html>

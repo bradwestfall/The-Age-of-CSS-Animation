@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="assets/toggles.js"></script>
+	<link rel="stylesheet" href="assets/toggles.css">
+	<style>
+
+		section {
+			background-color: blue;
+			width: 500px;
+			padding: 10px;
+			margin: 30px;
+		}
+
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+
+		div.absolute {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+
+		div.translate {
+			transform: translate(50%, 50%);
+		}
+	
+	</style>
+</head>
+<body>
+	
+	<section>
+		<div></div>
+	</section>
+	
+	<nav>
+		<button class="absolute">Absolute</button>
+		<button class="translate">Transform: Translate</button>
+	</nav>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script>
+	$(function() {
+
+		$('button').on('click', function() {
+			var newElement = $('<div class="new user">User</div>');
+			$('.users').append(newElement);
+			newElement.focus();
+			newElement.removeClass('new');
+		});
+
+	});
+	</script>
+	<style>
+
+		.users {
+			width: 500px;
+		}
+
+		.user {
+			background-color: #ddd;
+			padding: 10px;
+			margin: 10px;
+			transition: all 1s;
+			transform: translateY(0);
+		}
+
+		.user.new {
+			transform: translateY(20px);
+			background-color: yellow;
+		}
+
+
+
+
+/*		.user {
+			background-color: #ddd;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.user.new {
+			-webkit-animation-name: new-user;	
+			-webkit-animation-duration: 1s;
+		}
+
+		@-webkit-keyframes new-user {
+			0% {
+				transform: translateY(20px);
+				background-color: yellow;
+			}
+			100% {
+				transform: translateY(0);
+			}		
+		}*/
+
+	</style>
+</head>
+<body>
+	
+	<button>Add User</button>
+
+	<div class="users">
+		<div class="user">User</div>
+	</div>
+
+</body>
+</html>
